@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+
+.centering {
+    margin: 0 auto;
+}
+
+.error_message {
+	color: #FF5555;
+}
+
+body {
+	background-color: #999999;
+}
