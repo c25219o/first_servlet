@@ -9,12 +9,12 @@
 <body>
 
 
-<div class="centering">
+<div>
     <span class="error_message">${errorMessage}</span>
     <form action="<%=request.getContextPath()%>/login" method="POST">
         <p>
-            <input type="text" name="userId" id="userId" placeholder="USER ID"><span id="alert_id" class="error_message"></span><br>
-            <input type="password" name="pass" id="pass" placeholder="PASSWORD"><span id="alert_pass" class="error_message"></span><br>
+            <input type="text" name="userId" id="userId" placeholder="USER ID" required><span id="alert_id" class="error_message"></span><br>
+            <input type="password" name="pass" id="pass" placeholder="PASSWORD" required><span id="alert_pass" class="error_message"></span><br>
         </p>
         <p>
             <input type="submit" value="LOG IN">

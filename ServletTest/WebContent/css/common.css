@@ -1,8 +1,13 @@
 @CHARSET "UTF-8";
 
-.centering {
-    margin: 0 auto;
+/*
+:valid {
+    color: green;
 }
+:invalid {
+    color: red;
+}
+*/
 
 .error_message {
 	color: #FF5555;
@@ -11,10 +16,7 @@
 body {
 	background-color: #FFFFFF;
 	line-height: 1.5;
-}
-
-div.centering {
-	margin: 50px;
+    margin: 50px;
 }
 
 .textboxAlert {
