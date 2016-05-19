@@ -19,8 +19,8 @@ public class SessionControlFilter implements Filter {
 	@Override
 	public void init(FilterConfig arg0) throws ServletException {
 		// do nothing
-
 	}
+
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
@@ -64,7 +64,6 @@ public class SessionControlFilter implements Filter {
 	@Override
 	public void destroy() {
 		// do nothing
-
 	}
 
 
