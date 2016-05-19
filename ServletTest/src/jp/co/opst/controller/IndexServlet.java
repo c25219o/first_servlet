@@ -13,7 +13,7 @@ import jp.co.opst.constants.Pages;
 /**
  * Servlet implementation class IndexServlet
  */
-@WebServlet("/")
+@WebServlet("/index")
 public class IndexServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

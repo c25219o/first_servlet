@@ -25,8 +25,11 @@ public class LoginServlet extends HttpServlet {
 	 */
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String userId = (String)request.getAttribute("userId");
-		String pass = (String)request.getAttribute("pass");
+		String userId = request.getParameter("userId");
+		String pass = request.getParameter("pass");
+
+		System.out.println(userId);
+		System.out.println(pass);
 
 		// LOGIN SUCCESS
 		if (USER_ID.equals(userId) && PASS.equals(pass)) {
@@ -39,7 +42,7 @@ public class LoginServlet extends HttpServlet {
 		} else {
 			request.setAttribute("errorMessage", "ログイン情報が間違っています。");
 //			super.getServletContext().getRequestDispatcher(Pages.CONTEXTPATH).forward(request, response);
-			request.getRequestDispatcher(Pages.CONTEXTPATH).forward(request, response);
+			request.getRequestDispatcher(Pages.JSP_INDEX).forward(request, response);
 //			response.sendRedirect(Pages.CONTEXT);
 			return;
 		}

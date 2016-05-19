@@ -9,5 +9,14 @@
 }
 
 body {
-	background-color: #999999;
+	background-color: #FFFFFF;
+	line-height: 1.5;
+}
+
+div.centering {
+	margin: 50px;
+}
+
+.textboxAlert {
+	background: #FFBBBB;
 }
